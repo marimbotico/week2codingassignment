@@ -1,0 +1,157 @@
+
+/* CSS Element selector*/
+/*overall backgroung color gradient*/
+html {
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+  background: linear-gradient(180deg, #84daf5, #89ffff, #affffa, #ffffff);
+}
+body {
+  background-color:rgb(88, 189, 228);
+  margin: 1rem;
+}
+/*Title centered, applied shadow and assigned color*/
+h1 {
+    text-align: center;
+    filter: drop-shadow(16px 16px 10px black);
+}
+
+p {
+  margin-left: 5px;
+}
+
+/* Image settings*/
+img {
+    box-shadow: 2px, 2px, 2px, 1px, rgb black(0,0,0,0.5);
+    border-radius: 5rem;
+}
+
+/* Table settings are defined by border and width*/
+table, th, td {
+    width: 100%;
+    grid-template-columns:max-content;
+    grid-template-rows: auto;
+    border: 1px solid;
+  }
+  
+  th {
+    height: 70px;
+  }
+
+  td {
+    height: 40px;
+  }
+/* everytime it hover's over the row it turns aqua*/
+  tr :hover {
+    background-color: aqua;
+  }
+
+footer {
+    margin: 2rem 0 2rem 0;
+    text-align: center;
+  }
+
+/* ---CUSTOM CLASS NAME SELECTORS--- */
+/*menu items brighten up when clicked and gave them a nice box*/
+.navigation-div {
+    border-radius: 5%;
+    filter: brightness(1);
+    margin-left: 10px;
+}
+
+/* image settings that apply to all pages*/
+.img-div {
+    display: flex;
+    justify-content: center;
+    border-radius: 5rem;
+  }
+
+.img-div-2 {
+    filter: blur(5);
+    border-radius: 10%;
+    display:flex;
+    justify-content:inline;
+    margin: 5px
+  }
+
+/* made a FAQ box and gave it some styling*/ 
+.FAQ-div {
+    list-style-position: inside;  
+    text-align: center;
+    background-color: whitesmoke;
+    width:fit-content;
+    border: 5px solid rgb(1, 12, 19);
+    box-sizing: border-box;
+    padding: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+   /*need help centering this*/
+}
+    
+.form1 {
+  box-sizing: border-box;
+  align-self: self-start;
+  margin-left: 5px;
+  
+
+}
+.rates-div {
+      color: rgb(3, 39, 64);
+      border-bottom: 5rem;
+      margin-left: 5px;
+}
+
+
+  /*ID Selectors*/
+
+  #home-long {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #home-short {
+    width: 230px
+    display:none
+  }
+
+  #mp {
+    text-decoration: wavy;
+    text-align: center;
+  }
+
+  /* ----- MEDIA QUERIES for RESPONSIVE DESIGN ----- */
+/* created media queries to adjust to screen sizes by following the lab guidelines, 2 images, different settings*/
+@media only screen and (max-width: 500px) {
+  #home-long {
+    display: none;
+  }
+  #home-short {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  #home-long {
+    display: block;
+  }
+  #home-short {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #about-long {
+    display: none;
+  }
+  #about-short {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  #about-long {
+    display: block;
+  }
+  #about-short {
+    display: none;
+  }
+}
