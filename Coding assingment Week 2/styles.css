@@ -1,6 +1,6 @@
 
 /* CSS Element selector*/
-/*overall backgroung color gradient*/
+/*overall background color gradient*/
 html {
   font-family: Calibri, 'Trebuchet MS', sans-serif;
   background: linear-gradient(180deg, #84daf5, #89ffff, #affffa, #ffffff);
@@ -40,7 +40,7 @@ table, th, td {
   td {
     height: 40px;
   }
-/* everytime it hover's over the row it turns aqua*/
+/* every time it hovers over the row it turns aqua*/
   tr :hover {
     background-color: aqua;
   }
@@ -84,7 +84,7 @@ footer {
     padding: 50px;
     margin-left: 25px;
     margin-right: 25px;
-   /*need help centering this*/
+   
 }
     
 .form1 {
