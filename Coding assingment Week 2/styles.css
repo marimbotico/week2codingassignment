@@ -112,7 +112,12 @@ footer {
     width: 230px
     display:none
   }
-
+#submit-button {
+  background-color: rgb(4, 53, 54);
+  color: white;
+  padding: 5px 5px;
+  border-radius: 1rem;
+}
   #mp {
     text-decoration: wavy;
     text-align: center;
